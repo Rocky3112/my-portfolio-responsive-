@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* header and nav style */
+.header {
+  background-color: #fff8f3;
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom right, left;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 150px;
+}
+.nav-title {
+  font-weight: 800;
+  font-size: 35px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav li {
+  list-style-type: none;
+  margin-left: 50px;
+}
+
+.text-primary {
+  color: tomato;
+}
+
+.btn-primary {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  border: 0;
+  padding: 15px 15px;
+  height: 60px;
+  width: 170px;
+  border-radius: 10px;
+
+  background-color: tomato;
+}
+
+/* banner style */
+
+.banner {
+  display: flex;
+  align-items: center;
+  margin: 0 150px;
+}
+
+.banner-sub-title {
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 55px;
+  margin-bottom: 5px;
+}
+.banner-descript {
+  margin-bottom: 20px;
+  margin-right: 70px;
+  color: #757575;
+}
+
+.banner-image {
+  width: 500px;
+  height: 700px;
+}
+
+/* main section */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* about section Style */
+section {
+  margin-top: 130px;
+}
+
+.about {
+  margin-top: 130px;
+  background: #fff8f3;
+  border-radius: 10px;
+  padding: 130px 150px;
+  text-align: center;
+}
+
+.section-title {
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.section-description {
+  color: #757575;
+  font-size: 18px;
+}
+
+/* about info */
+.about-info-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.info-title {
+  color: #757575;
+  font-size: 20px;
+}
+
+.info-descript {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* what i do section style */
+
+.what-ido {
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  gap: 70px;
+}
+
+.skill {
+  background: #ffffff;
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.skill-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0;
+}
+.skill-descript {
+  color: #757575;
+}
+
+/* resume style */
+.resume-title{
+  font-size: 30px;
+  color: #474747;
+}
+.resume-content {
+  display: flex;
+  gap: 30px;
+}
+
+.resume-item{
+  margin: 30px 0;
+}
+.resume .title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #474747;
+  margin-bottom: 10px;
+}
+.resume .sub-title {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.resume .description {
+  color: #757575;
+}
+
+.resumne-btn{
+  margin-top: 50px;
+  text-align: center;
+  
+}
+
+/* contact style */
+.contact{
+  display: flex;
+  gap: 100px;
+  width:75%;
+  background: #FFF8F3;
+  padding: 80px 150px;
+}
+.contact .section-title{
+text-align: left;
+}
+
+.contact input[type="text"],input[type="email"], textarea{
+  margin: 20px;
+  padding:18px 30px;
+  width: 70%;
+  border: 0;
+}
+input{
+  height: 40px;
+}
+.contact .section-description{
+  margin-bottom: 20px;
+}
+
+.contact a{
+  text-decoration: none;
+  
+}
+.contact a img{
+  margin-right: 20px;
+}
+
+/* Responsive style */
+.hide{
+  display: none;
+}
+
+@media screen and (max-width:576px) {
+  .header{
+    background-image: none;
+  }
+  nav,.skills-container, .resume-content,.contact, .about-info-container, .banner {
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 15px;
+   
+  }
+  nav{
+    padding: 10px;
+  }
+  nav ul{
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px;
+  }
+  .banner{
+    margin: 10px;
+  }
+  .nav-title{
+    text-align: center;
+  }
+  .banner-image{
+    width: 100%;
+  }
+  .about{
+    padding: 20px;
+  }
+  .contact input textarea{
+    
+    margin: 10px;
+    padding: 5px;
+  }
+  main{
+    
+    margin: 0 auto;
+  }
+  .resume{
+    padding: 20px;
+  }
+  .btn-primary{
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+  nav ,.banner{
+    flex-direction: column;
+    gap: 15px;
+    
+  
+  }
+  .skills-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+  .resume{
+    padding: 20px;
+  }
+  
+}
