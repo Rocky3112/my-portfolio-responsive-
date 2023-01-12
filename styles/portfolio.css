@@ -245,8 +245,14 @@ input{
   .banner{
     margin: 10px;
   }
+  nav .btn-primary{
+    width: 100px;
+    height: 50px;
+    margin-left: 5px;
+    padding: 2px;
+  }
   .nav-title{
-    text-align: center;
+    
   }
   .banner-image{
     width: 100%;
