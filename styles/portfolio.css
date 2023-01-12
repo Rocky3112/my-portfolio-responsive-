@@ -10,6 +10,9 @@
     url("../images/developer.png");
   background-repeat: no-repeat;
   background-position: bottom right, left;
+  min-width: 1150px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 nav {
   display: flex;
@@ -189,7 +192,7 @@ section {
 .contact{
   display: flex;
   gap: 100px;
-  width:75%;
+  /* width:75%; */
   background: #FFF8F3;
   padding: 80px 150px;
 }
@@ -290,7 +293,17 @@ input{
     grid-template-columns: 2fr 2fr;
   }
   .resume{
-    padding: 20px;
+    padding: 50px;
+  }
+  .contact{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .contact .section-title {
+    text-align: center;
+}
+  .btn-primary{
+    align-items: center;
   }
   
 }
