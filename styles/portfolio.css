@@ -250,12 +250,14 @@ input{
     height: 50px;
     margin-left: 5px;
     padding: 2px;
+    
   }
   .nav-title{
     
   }
   .banner-image{
     width: 100%;
+    height: 500px;
   }
   .about{
     padding: 20px;
